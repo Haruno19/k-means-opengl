@@ -265,7 +265,7 @@ bool ClusterComplete()
 	ClusterT* curClust;
 
 	curClust = clusterFront;
-	while (curClust != NULL)	//se non ho spostato nessun cluster nell'ultimo ciclo, ho finito
+	while (curClust != NULL)	//if no cluster has moved, the algorithm has finished
 	{
 		if ((curClust->prevX != curClust->x) || (curClust->prevY != curClust->y))
 			return false;
