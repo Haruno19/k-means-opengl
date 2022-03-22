@@ -5,12 +5,12 @@ Outputs an animated graphical simulation of the clustering algorithm.
 You can input the number of Data Points and Clusters at the start of the program.
   
 ## How it works
-Data Points and Clusters are stored in linked lists and dynamically allocated.  
-Each point is identified by its coordinates (randomly generated); the algorithm is simulated by attaching each Data Point to one Cluster based on their coordinates, the Cluster is then moved at the center of its attached Data Points. These two operations are iterated until no Cluster is moving between one step and the other, meaning every Cluster has reached a stable position and each Data Point is attached to the "right" Cluster. 
+**Data Points** and **Clusters** are stored in linked lists and dynamically allocated.  
+Each point is identified by its **coordinates** *(randomly generated)*; the algorithm is simulated by attaching *each* **Data Point** to *one* **Cluster** based on their coordinates, the **Cluste**r is then moved at the *center* of its attached **Data Points**. These two operations are *iterated* until *no* **Cluster** is moving between one step and the other, meaning every **Cluster** has reached a *stable position* and each **Data Point** is attached to the *"right"* **Cluster**. 
 
 ---
 
-###### Sample outputs (stable state)
+###### Sample outputs *(stable state)*
 
 <table>
   <tr>
