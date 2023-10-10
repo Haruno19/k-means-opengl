@@ -1,12 +1,13 @@
 # k-means-opengl
-K-Means clustering algorithm implementation in C++ with GLFW3 OpenGL.
+#### 09.2020
+K-Means clustering algorithm simulation in C++ with GLFW3 OpenGL.
 
-Outputs an animated graphical simulation of the clustering algorithm.  
-You can input the number of Data Points and Clusters at the start of the program.
+The output is an animated graphical simulation of the K-means clustering algorithm on a set of randomly generated clusters and data points.
+The user can input the number of Data Points and Clusters at the start of the program, and then run the simulation.
   
 ## How it works
-**Data Points** and **Clusters** are stored in linked lists and dynamically allocated.  
-Each point is identified by its **coordinates** *(randomly generated)*; the algorithm is simulated by attaching *each* **Data Point** to *one* **Cluster** based on their coordinates, the **Cluste**r is then moved at the *center* of its attached **Data Points**. These two operations are *iterated* until *no* **Cluster** is moving between one step and the other, meaning every **Cluster** has reached a *stable position* and each **Data Point** is attached to the *"right"* **Cluster**. 
+**Data Points** and **Clusters** are stored in separate linked lists and are dynamically allocated.  
+Each point is initially positioned in the plane at **randomly generated coordinates**; the algorithm is simulated by attaching each **Data Point** to one **Cluster** based on their coordinates, the **Cluste**r is then moved at the center of its attached **Data Points**. These two operations are then iterated until no **Cluster** is moving between one interation and the next, meaning that every **Cluster** has reached a *stable position* and each **Data Point** is attached to its "correct" **Cluster**. 
 
 ---
 
